@@ -1,0 +1,19 @@
+---
+name: launch-template-version-update
+# AWS Confs
+AWS_REGION: ap-south-1
+
+# ASG names
+ASG_NAMES: 
+  - ASG-Demo-Jenkins:
+    - Name: ASG-Demo-Jenkins
+    - Environment: Non-Prod
+    - Architecture: ARM64
+  - ASG-Demo-App:
+    - Name: ASG-Demo-App
+
+  # - ASG-Demo-App:                        # This is the ASG Name
+  #   - Tag_Name: Tag_Value                     # These will be Tags of AMIs
+  #   - Name: ASG-Demo-App                      # Name - Compulsory
+  #   - Architecture: ARM64                     # All Others - Optional
+  ...
